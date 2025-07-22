@@ -5,50 +5,36 @@
     <title>One Pager</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .container {
-            max-width: 900px;
-            margin: 20px auto;
+            max-width: 1000px;
+            margin: 30px auto;
             background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .image-section {
-            margin-bottom: 20px;
-            text-align: center;
+        .hero {
+            background: url('one_pager_page1.png') no-repeat center top;
+            background-size: contain;
+            height: 1400px;
+            width: 100%;
         }
-        .image-section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        @media (max-width: 768px) {
+            .hero {
+                background-size: cover;
+                height: auto;
+                padding-bottom: 150%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="image-section">
-            <img src="extracted_image_page1_1.jpeg" alt="Section 1">
-        </div>
-        <div class="image-section">
-            <img src="extracted_image_page1_2.jpeg" alt="Section 2">
-        </div>
-        <div class="image-section">
-            <img src="extracted_image_page1_3.jpeg" alt="Section 3">
-        </div>
-        <div class="image-section">
-            <img src="extracted_image_page1_4.jpeg" alt="Section 4">
-        </div>
-        <div class="image-section">
-            <img src="extracted_image_page1_5.jpeg" alt="Section 5">
-        </div>
-        <div class="image-section">
-            <img src="extracted_image_page1_6.jpeg" alt="Section 6">
-        </div>
+        <div class="hero"></div>
     </div>
 </body>
 </html>
